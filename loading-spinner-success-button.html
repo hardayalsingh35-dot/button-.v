@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loading Spinner Success — Hero Buttons</title>
+<!-- From Hero Buttons · MIT License · free to use -->
+<style>
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #0f1a14; font-family: "Segoe UI", Arial, sans-serif; }
+  .stage.lit { background: radial-gradient(circle, #4a4030, #1c1a16); }
+.b-load{position:relative;min-width:160px;padding:14px 40px;border:0;border-radius:40px;background:#22c55e;color:#fff;font:700 16px "Segoe UI",sans-serif;cursor:pointer;transition:.3s}
+.b-load.loading,.b-load.done{color:transparent;pointer-events:none}
+.b-load.loading::after{content:"";position:absolute;left:50%;top:50%;width:20px;height:20px;margin:-10px;border:3px solid #fff5;border-top-color:#fff;border-radius:50%;animation:ld-spin .7s linear infinite}
+.b-load.done{background:#16a34a}
+.b-load.done::after{content:"✓";position:absolute;inset:0;display:grid;place-items:center;color:#fff;font-size:22px}
+@keyframes ld-spin{to{transform:rotate(360deg)}}
+</style>
+</head>
+<body>
+<button class="b-load" data-load="">Submit</button>
+<script>
+document.querySelectorAll('[data-load]').forEach(b=>b.addEventListener('click',()=>{b.classList.add('loading');setTimeout(()=>{b.classList.replace('loading','done');setTimeout(()=>b.classList.remove('done'),1500)},1500)}));
+</script>
+</body>
+</html>

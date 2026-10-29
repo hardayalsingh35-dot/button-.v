@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aquaman Waves — Hero Buttons</title>
+<!-- From Hero Buttons · MIT License · free to use -->
+<style>
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #071c22; font-family: "Segoe UI", Arial, sans-serif; }
+  .stage.lit { background: radial-gradient(circle, #4a4030, #1c1a16); }
+.b-aqua{position:relative;padding:16px 44px;border:0;border-radius:12px;color:#ffd97a;font:900 18px/1 Impact,"Arial Black",sans-serif;letter-spacing:4px;cursor:pointer;background:#0b4f5a;box-shadow:0 10px 30px #000;overflow:hidden;transition:.3s}
+.b-aqua::before,.b-aqua::after{content:"";position:absolute;left:-50%;width:200%;height:200%;top:75%;border-radius:40%;background:#1aa7a0aa;animation:aq-wave 5s linear infinite;transition:top .8s}
+.b-aqua::after{background:#3ad6c466;animation-duration:7s;top:80%;border-radius:45%}
+.b-aqua:hover::before{top:30%}.b-aqua:hover::after{top:40%}
+.b-aqua span{position:relative;z-index:1}
+@keyframes aq-wave{to{transform:rotate(360deg)}}
+</style>
+</head>
+<body>
+<button class="b-aqua"><span>AQUAMAN</span></button>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Border Draw SVG — Hero Buttons</title>
+<!-- From Hero Buttons · MIT License · free to use -->
+<style>
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #101418; font-family: "Segoe UI", Arial, sans-serif; }
+  .stage.lit { background: radial-gradient(circle, #4a4030, #1c1a16); }
+.b-draw{position:relative;padding:14px 44px;border:0;background:transparent;color:#fff;font:700 16px "Segoe UI",sans-serif;letter-spacing:2px;cursor:pointer}
+.b-draw svg{position:absolute;inset:0;width:100%;height:100%;fill:none;stroke:#f9c74f;stroke-width:3;pointer-events:none}
+.b-draw rect{stroke-dasharray:420;stroke-dashoffset:420;transition:stroke-dashoffset .8s ease}
+.b-draw:hover rect{stroke-dashoffset:0}.b-draw:hover{color:#f9c74f}
+</style>
+</head>
+<body>
+<button class="b-draw"><svg><rect x="1.5" y="1.5" width="calc(100% - 3px)" height="calc(100% - 3px)" rx="6"></rect></svg>DRAW</button>
+
+</body>
+</html>

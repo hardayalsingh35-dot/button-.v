@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Download Progress — Hero Buttons</title>
+<!-- From Hero Buttons · MIT License · free to use -->
+<style>
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #0f172a; font-family: "Segoe UI", Arial, sans-serif; }
+  .stage.lit { background: radial-gradient(circle, #4a4030, #1c1a16); }
+.b-dlp{position:relative;overflow:hidden;min-width:190px;padding:14px 40px;border:0;border-radius:10px;background:#1e293b;color:#fff;font:700 15px "Segoe UI",sans-serif;cursor:pointer;box-shadow:0 8px 20px #0006}
+.b-dlp::before{content:"";position:absolute;left:0;top:0;bottom:0;width:0;background:#22c55e;transition:width 2s linear;z-index:0}
+.b-dlp span{position:relative;z-index:1}
+.b-dlp.go::before{width:100%}
+.b-dlp.ok{background:#22c55e}
+</style>
+</head>
+<body>
+<button class="b-dlp" data-dlp=""><span>⬇ Download</span></button>
+<script>
+document.querySelectorAll('[data-dlp]').forEach(b=>b.addEventListener('click',()=>{if(b.classList.contains('go'))return;b.classList.add('go');b.querySelector('span').textContent='Downloading…';setTimeout(()=>{b.classList.add('ok');b.querySelector('span').textContent='✓ Downloaded';setTimeout(()=>{b.classList.remove('go','ok');b.querySelector('span').textContent='⬇ Download'},1500)},2000)}));
+</script>
+</body>
+</html>

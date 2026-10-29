@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animated Gradient Border — Hero Buttons</title>
+<!-- From Hero Buttons · MIT License · free to use -->
+<style>
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #0d0d12; font-family: "Segoe UI", Arial, sans-serif; }
+  .stage.lit { background: radial-gradient(circle, #4a4030, #1c1a16); }
+@property --a{syntax:'<angle>';initial-value:0deg;inherits:false}
+.b-grad{position:relative;padding:14px 40px;border:0;border-radius:40px;background:#111;color:#fff;font:700 16px "Segoe UI",sans-serif;cursor:pointer;z-index:0}
+.b-grad::before{content:"";position:absolute;inset:-3px;border-radius:42px;background:conic-gradient(from var(--a),#ff0080,#ff8c00,#40e0d0,#8a2be2,#ff0080);z-index:-2;animation:grad-rot 3s linear infinite}
+.b-grad::after{content:"";position:absolute;inset:0;border-radius:40px;background:#111;z-index:-1}
+.b-grad:hover::before{filter:blur(6px)}
+@keyframes grad-rot{to{--a:360deg}}
+</style>
+</head>
+<body>
+<button class="b-grad">Gradient Border</button>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joker Ha Ha — Hero Buttons</title>
+<!-- From Hero Buttons · MIT License · free to use -->
+<style>
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #150a22; font-family: "Segoe UI", Arial, sans-serif; }
+  .stage.lit { background: radial-gradient(circle, #4a4030, #1c1a16); }
+.b-joker{position:relative;padding:16px 44px;border:0;border-radius:12px;color:#5cff5c;font:900 18px/1 Impact,"Arial Black",sans-serif;letter-spacing:4px;cursor:pointer;background:linear-gradient(135deg,#5a1f8a,#2d0a4f);box-shadow:0 10px 30px #000,inset 0 0 0 2px #8e3fd1;transition:.3s}
+.b-joker:hover{animation:jitter .15s infinite;color:#fff;text-shadow:0 0 10px #5cff5c}
+.b-joker i{position:absolute;color:#5cff5c;font:700 14px Impact,sans-serif;opacity:0;pointer-events:none;font-style:normal}
+.b-joker i:nth-of-type(1){left:0;top:-10px}.b-joker i:nth-of-type(2){right:-6px;top:-18px}.b-joker i:nth-of-type(3){left:30%;bottom:-18px}
+.b-joker:hover i{animation:haha 1s infinite}.b-joker:hover i:nth-of-type(2){animation-delay:.3s}.b-joker:hover i:nth-of-type(3){animation-delay:.6s}
+@keyframes haha{0%{opacity:0;transform:translateY(0) rotate(-10deg)}30%{opacity:1}100%{opacity:0;transform:translateY(-30px) rotate(10deg)}}
+@keyframes jitter{25%{transform:translate(1px,-1px) rotate(.5deg)}75%{transform:translate(-1px,1px) rotate(-.5deg)}}
+</style>
+</head>
+<body>
+<button class="b-joker">JOKER<i>HA</i><i>HA</i><i>HA</i></button>
+
+</body>
+</html>

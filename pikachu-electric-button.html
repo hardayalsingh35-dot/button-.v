@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pikachu Electric — Hero Buttons</title>
+<!-- From Hero Buttons · MIT License · free to use -->
+<style>
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #1a1808; font-family: "Segoe UI", Arial, sans-serif; }
+  .stage.lit { background: radial-gradient(circle, #4a4030, #1c1a16); }
+.b-pika{position:relative;padding:16px 56px;border:0;border-radius:40px;color:#5a3a00;font:900 18px/1 Impact,"Arial Black",sans-serif;letter-spacing:3px;cursor:pointer;background:linear-gradient(#ffe259,#f5c518);box-shadow:0 6px 0 #a87800,0 12px 24px #0008;transition:.15s}
+.b-pika::before,.b-pika::after{content:"";position:absolute;top:50%;width:16px;height:16px;border-radius:50%;background:#ff4d4d;transform:translateY(-50%)}
+.b-pika::before{left:16px}.b-pika::after{right:16px}
+.b-pika i{position:absolute;top:-28px;left:50%;width:18px;height:28px;background:#fff;clip-path:polygon(60% 0,20% 55%,50% 55%,30% 100%,85% 40%,55% 40%);opacity:0;filter:drop-shadow(0 0 6px #ffe259);transform:translateX(-50%)}
+.b-pika:hover i{animation:pika .3s steps(2) infinite}
+.b-pika:hover{box-shadow:0 6px 0 #a87800,0 0 40px #ffe259}
+@keyframes pika{50%{opacity:1}}
+</style>
+</head>
+<body>
+<button class="b-pika"><i></i>PIKA!</button>
+
+</body>
+</html>

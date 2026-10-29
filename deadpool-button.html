@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deadpool — Hero Buttons</title>
+<!-- From Hero Buttons · MIT License · free to use -->
+<style>
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #1a0f10; font-family: "Segoe UI", Arial, sans-serif; }
+  .stage.lit { background: radial-gradient(circle, #4a4030, #1c1a16); }
+.b-dp{position:relative;padding:16px 40px 16px 70px;border:0;border-radius:40px;color:#fff;font:900 15px/1 Impact,"Arial Black",sans-serif;letter-spacing:2px;cursor:pointer;background:linear-gradient(#e3262f,#9c0c14);box-shadow:0 6px 0 #4a0408,0 12px 24px #0008;transition:.15s}
+.b-dp i{position:absolute;left:14px;top:50%;width:40px;height:40px;border-radius:50%;background:#111;transform:translateY(-50%)}
+.b-dp i::before,.b-dp i::after{content:"";position:absolute;top:14px;width:11px;height:11px;background:#fff;border-radius:60% 40% 50% 50%;transition:.2s}
+.b-dp i::before{left:7px;transform:rotate(-15deg)}.b-dp i::after{right:7px;transform:rotate(15deg)}
+.b-dp:hover i::after{height:3px;top:18px}
+.b-dp:active{transform:translateY(4px);box-shadow:0 2px 0 #4a0408}
+</style>
+</head>
+<body>
+<button class="b-dp"><i></i>MAXIMUM EFFORT</button>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nagraj Snake — Hero Buttons</title>
+<!-- From Hero Buttons · MIT License · free to use -->
+<style>
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #071408; font-family: "Segoe UI", Arial, sans-serif; }
+  .stage.lit { background: radial-gradient(circle, #4a4030, #1c1a16); }
+.b-nag{position:relative;padding:16px 44px;border:0;border-radius:40px;color:#eaffea;font:900 18px/1 Impact,"Arial Black",sans-serif;letter-spacing:4px;cursor:pointer;background:radial-gradient(circle at 50% 100%,#1d7a27 40%,transparent 42%) 0 0/14px 14px,radial-gradient(circle at 50% 100%,#1d7a27 40%,transparent 42%) 7px 7px/14px 14px,#145c1c;box-shadow:0 10px 30px #000,inset 0 0 0 2px #3bd14a;transition:.3s}
+.b-nag i{position:absolute;top:50%;width:0;height:6px;background:#3bd14a;border-radius:3px;transition:width .4s;transform:translateY(-50%)}
+.b-nag i:first-child{right:100%;transform-origin:right}.b-nag i:last-child{left:100%;transform-origin:left}
+.b-nag i::after{content:"";position:absolute;top:-3px;width:12px;height:12px;border-radius:50%;background:#3bd14a}
+.b-nag i:first-child::after{left:-6px}.b-nag i:last-child::after{right:-6px}
+.b-nag:hover i{width:40px;animation:slither .4s infinite alternate}
+.b-nag:hover{box-shadow:0 0 30px #3bd14a88,0 10px 30px #000,inset 0 0 0 2px #7dff8a}
+@keyframes slither{from{transform:translateY(-50%) rotate(-12deg)}to{transform:translateY(-50%) rotate(12deg)}}
+</style>
+</head>
+<body>
+<button class="b-nag"><i></i>NAGRAJ<i></i></button>
+
+</body>
+</html>

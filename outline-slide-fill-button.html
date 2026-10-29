@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Outline Slide Fill — Hero Buttons</title>
+<!-- From Hero Buttons · MIT License · free to use -->
+<style>
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #1a0f18; font-family: "Segoe UI", Arial, sans-serif; }
+  .stage.lit { background: radial-gradient(circle, #4a4030, #1c1a16); }
+.b-slide{position:relative;overflow:hidden;padding:14px 40px;border:2px solid #f72585;border-radius:4px;background:transparent;color:#f72585;font:700 16px "Segoe UI",sans-serif;letter-spacing:2px;cursor:pointer;z-index:0;transition:color .3s}
+.b-slide::before{content:"";position:absolute;top:0;bottom:0;left:-10%;width:120%;background:#f72585;transform:translateX(-101%) skewX(-15deg);transition:.3s;z-index:-1}
+.b-slide:hover::before{transform:translateX(0) skewX(-15deg)}.b-slide:hover{color:#fff}
+</style>
+</head>
+<body>
+<button class="b-slide">SLIDE</button>
+
+</body>
+</html>

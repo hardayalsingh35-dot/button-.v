@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mr. India Invisible — Hero Buttons</title>
+<!-- From Hero Buttons · MIT License · free to use -->
+<style>
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #15151c; font-family: "Segoe UI", Arial, sans-serif; }
+  .stage.lit { background: radial-gradient(circle, #4a4030, #1c1a16); }
+.b-mrindia{position:relative;padding:16px 44px;border:2px solid #d8d8d8;border-radius:12px;color:#fff;font:900 18px/1 Impact,"Arial Black",sans-serif;letter-spacing:3px;cursor:pointer;background:linear-gradient(#3a3a46,#1c1c24);box-shadow:0 10px 30px #000;transition:.6s;overflow:hidden}
+.b-mrindia span{transition:.6s;position:relative;z-index:1}
+.b-mrindia::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent,#ff0000aa,transparent);transform:translateX(-100%);opacity:0}
+.b-mrindia:hover{background:transparent;border-color:#ffffff22;box-shadow:none}
+.b-mrindia:hover span{opacity:.3;color:#ff2a2a;text-shadow:0 0 10px #f00}
+.b-mrindia:hover::before{opacity:1;animation:redlight 1.5s linear infinite}
+@keyframes redlight{to{transform:translateX(100%)}}
+</style>
+</head>
+<body>
+<button class="b-mrindia"><span>MR. INDIA</span></button>
+
+</body>
+</html>

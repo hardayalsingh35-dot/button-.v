@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Liquid Fill — Hero Buttons</title>
+<!-- From Hero Buttons · MIT License · free to use -->
+<style>
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #0a1620; font-family: "Segoe UI", Arial, sans-serif; }
+  .stage.lit { background: radial-gradient(circle, #4a4030, #1c1a16); }
+.b-liquid{position:relative;overflow:hidden;padding:14px 40px;border:2px solid #00b4d8;border-radius:8px;background:transparent;color:#00b4d8;font:700 16px "Segoe UI",sans-serif;cursor:pointer;z-index:0;transition:color .4s}
+.b-liquid::before{content:"";position:absolute;left:-50%;top:100%;width:200%;height:200%;border-radius:40%;background:#00b4d8;z-index:-1;transition:top .6s}
+.b-liquid:hover::before{top:-70%;animation:lq-wave 4s linear infinite}.b-liquid:hover{color:#fff}
+@keyframes lq-wave{to{transform:rotate(360deg)}}
+</style>
+</head>
+<body>
+<button class="b-liquid">Liquid Fill</button>
+
+</body>
+</html>

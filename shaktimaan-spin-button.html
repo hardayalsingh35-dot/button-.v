@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shaktimaan Spin — Hero Buttons</title>
+<!-- From Hero Buttons · MIT License · free to use -->
+<style>
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #2a1208; font-family: "Segoe UI", Arial, sans-serif; }
+  .stage.lit { background: radial-gradient(circle, #4a4030, #1c1a16); }
+.b-shakti{position:relative;padding:16px 40px;border:0;border-radius:50px;color:#fff3c4;font:900 18px/1 Impact,"Arial Black",sans-serif;letter-spacing:3px;cursor:pointer;background:linear-gradient(#e8232a,#9c0b12);box-shadow:0 0 0 3px #ffb300,0 0 20px #ffb30066;transition:box-shadow .3s}
+.b-shakti::before{content:"";position:absolute;inset:-18px;border-radius:50%;border:3px dotted #ffd54a;opacity:0;transition:.3s}
+.b-shakti:hover{animation:shakti-spin .6s linear infinite;box-shadow:0 0 0 3px #ffb300,0 0 50px #ffb300}
+.b-shakti:hover::before{opacity:1}
+@keyframes shakti-spin{from{transform:perspective(400px) rotateY(0)}to{transform:perspective(400px) rotateY(360deg)}}
+</style>
+</head>
+<body>
+<button class="b-shakti">SHAKTIMAAN</button>
+
+</body>
+</html>

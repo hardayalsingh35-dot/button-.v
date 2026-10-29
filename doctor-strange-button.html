@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Doctor Strange — Hero Buttons</title>
+<!-- From Hero Buttons · MIT License · free to use -->
+<style>
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #160c0a; font-family: "Segoe UI", Arial, sans-serif; }
+  .stage.lit { background: radial-gradient(circle, #4a4030, #1c1a16); }
+.b-ds{position:relative;width:100px;height:100px;border-radius:50%;border:0;color:#ffd9a8;font:900 13px/1 Impact,"Arial Black",sans-serif;letter-spacing:2px;cursor:pointer;background:radial-gradient(circle,#7a2a1a,#2a0b0b);box-shadow:0 10px 30px #000,inset 0 0 0 2px #ff9a1f55;transition:.3s}
+.b-ds::before,.b-ds::after{content:"";position:absolute;inset:-10px;border-radius:50%;border:2px dashed #ff9a1f;opacity:0;transition:.3s;filter:drop-shadow(0 0 6px #ff9a1f)}
+.b-ds::after{inset:-20px;border-style:dotted;border-width:3px}
+.b-ds:hover::before{opacity:1;animation:ds-r 4s linear infinite}.b-ds:hover::after{opacity:1;animation:ds-r 6s linear infinite reverse}
+.b-ds:hover{text-shadow:0 0 12px #ff9a1f;color:#fff;box-shadow:0 10px 30px #000,0 0 30px #ff9a1f66,inset 0 0 0 2px #ff9a1f}
+@keyframes ds-r{to{transform:rotate(360deg)}}
+</style>
+</head>
+<body>
+<button class="b-ds">STRANGE</button>
+
+</body>
+</html>

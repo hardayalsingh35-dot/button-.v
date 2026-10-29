@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minnal Murali Lightning — Hero Buttons</title>
+<!-- From Hero Buttons · MIT License · free to use -->
+<style>
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #0a1a10; font-family: "Segoe UI", Arial, sans-serif; }
+  .stage.lit { background: radial-gradient(circle, #4a4030, #1c1a16); }
+.b-minnal{position:relative;padding:16px 40px 16px 56px;border:0;border-radius:12px;color:#fff;font:900 18px/1 Impact,"Arial Black",sans-serif;letter-spacing:3px;cursor:pointer;background:linear-gradient(135deg,#1aa34a,#0d5c2a);box-shadow:0 10px 30px #000,inset 0 0 0 2px #7affb0;transition:.2s;overflow:hidden}
+.b-minnal::before{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 40%,#e9ff47 40% 44%,transparent 44%),linear-gradient(60deg,transparent 60%,#e9ff47 60% 63%,transparent 63%);opacity:0;mix-blend-mode:screen}
+.b-minnal i{position:absolute;left:18px;top:50%;width:20px;height:28px;background:#e9ff47;clip-path:polygon(60% 0,20% 55%,50% 55%,30% 100%,85% 40%,55% 40%);transform:translateY(-50%);filter:drop-shadow(0 0 4px #e9ff47)}
+.b-minnal:hover::before{animation:minnal .4s steps(2) infinite}
+.b-minnal:hover{box-shadow:0 0 30px #e9ff4788,0 10px 30px #000,inset 0 0 0 2px #e9ff47;text-shadow:0 0 10px #e9ff47}
+@keyframes minnal{50%{opacity:1}}
+</style>
+</head>
+<body>
+<button class="b-minnal"><i></i>MINNAL</button>
+
+</body>
+</html>

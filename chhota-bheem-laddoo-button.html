@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chhota Bheem Laddoo — Hero Buttons</title>
+<!-- From Hero Buttons · MIT License · free to use -->
+<style>
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #2a1a08; font-family: "Segoe UI", Arial, sans-serif; }
+  .stage.lit { background: radial-gradient(circle, #4a4030, #1c1a16); }
+.b-bheem{position:relative;padding:16px 40px 16px 64px;border:0;border-radius:40px;color:#5a2d00;font:900 18px/1 Impact,"Arial Black",sans-serif;letter-spacing:3px;cursor:pointer;background:linear-gradient(#ffb74a,#f08a1c);box-shadow:0 6px 0 #a85a0a,0 12px 24px #0008;transition:.15s}
+.b-bheem i{position:absolute;left:14px;top:50%;width:36px;height:36px;border-radius:50%;background:radial-gradient(circle at 30% 60%,#c47a08 2px,transparent 3px),radial-gradient(circle at 65% 30%,#c47a08 2px,transparent 3px),radial-gradient(circle at 70% 70%,#c47a08 2px,transparent 3px),radial-gradient(circle at 35% 35%,#ffe28a,#f0a818 60%,#c47a08);box-shadow:inset -3px -3px 6px #0003;transform:translateY(-50%)}
+.b-bheem:hover i{animation:laddoo .6s infinite}
+.b-bheem:hover{animation:flex .6s infinite}
+.b-bheem:active{animation:none;transform:translateY(4px);box-shadow:0 2px 0 #a85a0a}
+@keyframes laddoo{50%{transform:translateY(-50%) translateY(-14px) rotate(180deg)}}
+@keyframes flex{50%{transform:scale(1.08)}}
+</style>
+</head>
+<body>
+<button class="b-bheem"><i></i>BHEEM</button>
+
+</body>
+</html>

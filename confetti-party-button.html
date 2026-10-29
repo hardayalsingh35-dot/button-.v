@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Confetti Party — Hero Buttons</title>
+<!-- From Hero Buttons · MIT License · free to use -->
+<style>
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #14101c; font-family: "Segoe UI", Arial, sans-serif; }
+  .stage.lit { background: radial-gradient(circle, #4a4030, #1c1a16); }
+.b-conf{position:relative;padding:14px 40px;border:0;border-radius:12px;background:linear-gradient(135deg,#f72585,#7209b7);color:#fff;font:800 16px "Segoe UI",sans-serif;cursor:pointer;box-shadow:0 8px 20px #0006;transition:.15s}
+.b-conf:active{transform:scale(.95)}
+.b-conf .c{position:absolute;left:50%;top:50%;width:8px;height:8px;pointer-events:none;animation:conf 1s ease-out forwards}
+@keyframes conf{to{transform:translate(var(--x),var(--y)) rotate(720deg);opacity:0}}
+</style>
+</head>
+<body>
+<button class="b-conf" data-confetti="">🎉 Celebrate</button>
+<script>
+document.querySelectorAll('[data-confetti]').forEach(b=>b.addEventListener('click',()=>{for(let i=0;i<30;i++){const c=document.createElement('i');c.className='c';const a=Math.random()*Math.PI*2,d=60+Math.random()*90;c.style.cssText='background:hsl('+(Math.random()*360)+',90%,60%);--x:'+(Math.cos(a)*d)+'px;--y:'+(Math.sin(a)*d-40)+'px;border-radius:'+(Math.random()>.5?'50%':'0');b.appendChild(c);c.addEventListener('animationend',()=>c.remove())}}));
+</script>
+</body>
+</html>

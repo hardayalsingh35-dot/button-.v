@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loki Horns — Hero Buttons</title>
+<!-- From Hero Buttons · MIT License · free to use -->
+<style>
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #0a1a10; font-family: "Segoe UI", Arial, sans-serif; }
+  .stage.lit { background: radial-gradient(circle, #4a4030, #1c1a16); }
+.b-loki{position:relative;padding:16px 44px;border:2px solid #e6b800;border-radius:12px;color:#e6b800;font:900 18px/1 Impact,"Arial Black",sans-serif;letter-spacing:3px;cursor:pointer;background:linear-gradient(#1f6b3a,#0d3a1e);box-shadow:0 10px 30px #000;transition:.3s}
+.b-loki i{position:absolute;top:-4px;width:12px;height:38px;background:#e6b800;border-radius:50% 50% 0 0/100% 100% 0 0;transform:translateY(20px) scale(0);transform-origin:bottom;transition:.4s cubic-bezier(.3,1.6,.5,1)}
+.b-loki i:first-child{left:18px}.b-loki i:nth-child(2){right:18px}
+.b-loki:hover i:first-child{transform:translateY(-30px) rotate(-30deg) scale(1)}.b-loki:hover i:nth-child(2){transform:translateY(-30px) rotate(30deg) scale(1)}
+.b-loki:hover{box-shadow:0 10px 30px #000,0 0 25px #e6b80066;color:#fff}
+</style>
+</head>
+<body>
+<button class="b-loki"><i></i><i></i>LOKI</button>
+
+</body>
+</html>

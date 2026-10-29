@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hulk Smash — Hero Buttons</title>
+<!-- From Hero Buttons · MIT License · free to use -->
+<style>
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #141c10; font-family: "Segoe UI", Arial, sans-serif; }
+  .stage.lit { background: radial-gradient(circle, #4a4030, #1c1a16); }
+.b-hulk{position:relative;padding:18px 44px;border:0;border-radius:10px;color:#eaffd0;font:900 20px/1 Impact,"Arial Black",sans-serif;letter-spacing:4px;cursor:pointer;background:linear-gradient(#5fbf3a,#2f7a1c);box-shadow:0 8px 0 #1b4a0f,0 14px 24px #0008;transition:.15s}
+.b-hulk::before{content:"";position:absolute;inset:0;border-radius:10px;background:linear-gradient(115deg,transparent 46%,#0a2a06 46% 48%,transparent 48% 62%,#0a2a06 62% 63.5%,transparent 63.5%),linear-gradient(60deg,transparent 30%,#0a2a06 30% 31.5%,transparent 31.5%);opacity:0;transition:.2s}
+.b-hulk:hover{animation:hulk-shake .3s infinite;background:linear-gradient(#7ad94f,#3a8f22)}
+.b-hulk:hover::before{opacity:1}
+.b-hulk:active{animation:none;transform:scale(.9) translateY(6px);box-shadow:0 2px 0 #1b4a0f}
+@keyframes hulk-shake{25%{transform:translate(-3px,2px) rotate(-1deg)}75%{transform:translate(3px,-2px) rotate(1deg)}}
+</style>
+</head>
+<body>
+<button class="b-hulk">SMASH</button>
+
+</body>
+</html>

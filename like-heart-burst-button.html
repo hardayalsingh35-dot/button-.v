@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Like Heart Burst — Hero Buttons</title>
+<!-- From Hero Buttons · MIT License · free to use -->
+<style>
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #1a0e12; font-family: "Segoe UI", Arial, sans-serif; }
+  .stage.lit { background: radial-gradient(circle, #4a4030, #1c1a16); }
+.b-like{position:relative;padding:12px 28px;border:2px solid #ff4d6d;border-radius:40px;background:transparent;color:#ff4d6d;font:700 15px "Segoe UI",sans-serif;cursor:pointer;transition:.3s;display:inline-flex;align-items:center;gap:8px}
+.b-like i{width:18px;height:18px;position:relative;transform:rotate(45deg) scale(.9);transition:.3s}
+.b-like i,.b-like i::before,.b-like i::after{background:currentColor;border-radius:0}
+.b-like i::before,.b-like i::after{content:"";position:absolute;width:18px;height:18px;border-radius:50%}
+.b-like i::before{left:-9px}.b-like i::after{top:-9px}
+.b-like.on{background:#ff4d6d;color:#fff;box-shadow:0 0 20px #ff4d6d88}
+.b-like.on i{animation:hb .4s}
+.b-like::after{content:"";position:absolute;inset:-10px;border-radius:50px;border:3px solid #ff4d6d;opacity:0;pointer-events:none}
+.b-like.on::after{animation:lburst .5s ease-out}
+@keyframes hb{50%{transform:rotate(45deg) scale(1.4)}}
+@keyframes lburst{0%{opacity:1;transform:scale(.8)}100%{opacity:0;transform:scale(1.5)}}
+</style>
+</head>
+<body>
+<button class="b-like" onclick="this.classList.toggle('on');this.querySelector('span').textContent=this.classList.contains('on')?'Liked':'Like'"><i></i><span>Like</span></button>
+
+</body>
+</html>

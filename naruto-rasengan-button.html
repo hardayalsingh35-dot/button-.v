@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Naruto Rasengan — Hero Buttons</title>
+<!-- From Hero Buttons · MIT License · free to use -->
+<style>
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #1c120a; font-family: "Segoe UI", Arial, sans-serif; }
+  .stage.lit { background: radial-gradient(circle, #4a4030, #1c1a16); }
+.b-naruto{position:relative;padding:16px 44px 16px 66px;border:0;border-radius:12px;color:#fff;font:900 18px/1 Impact,"Arial Black",sans-serif;letter-spacing:3px;cursor:pointer;background:linear-gradient(#ff8a1f,#e86000);box-shadow:0 6px 0 #1a1a2a,0 12px 24px #0008;transition:.15s}
+.b-naruto i{position:absolute;left:14px;top:50%;width:38px;height:38px;border-radius:50%;background:radial-gradient(circle,#fff,#7fd8ff 40%,#1e90ff 70%,transparent 72%);box-shadow:0 0 16px #1e90ff;transform:translateY(-50%) scale(0);transition:.3s}
+.b-naruto i::before{content:"";position:absolute;inset:4px;border-radius:50%;border:2px dashed #ffffffaa;animation:ras .6s linear infinite}
+.b-naruto:hover i{transform:translateY(-50%) scale(1)}
+.b-naruto:active{transform:translateY(4px);box-shadow:0 2px 0 #1a1a2a}
+@keyframes ras{to{transform:rotate(360deg)}}
+</style>
+</head>
+<body>
+<button class="b-naruto"><i></i>RASENGAN</button>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hawkeye Arrow — Hero Buttons</title>
+<!-- From Hero Buttons · MIT License · free to use -->
+<style>
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #120c1c; font-family: "Segoe UI", Arial, sans-serif; }
+  .stage.lit { background: radial-gradient(circle, #4a4030, #1c1a16); }
+.b-hawk{position:relative;padding:16px 44px;border:0;border-radius:10px;color:#fff;font:900 18px/1 Impact,"Arial Black",sans-serif;letter-spacing:3px;cursor:pointer;background:linear-gradient(#5b2d8e,#2e1550);box-shadow:0 10px 30px #000,inset 0 0 0 1px #8e5bd1;transition:.3s}
+.b-hawk i{position:absolute;left:-80px;top:50%;width:60px;height:3px;background:#ddd;transform:translateY(-50%);opacity:0}
+.b-hawk i::after{content:"";position:absolute;right:-8px;top:-5px;border-left:12px solid #fff;border-top:6px solid transparent;border-bottom:6px solid transparent}
+.b-hawk:hover i{animation:arrow .6s ease-in forwards}
+.b-hawk:hover{box-shadow:0 10px 30px #000,inset 0 0 0 1px #c9a0ff,0 0 20px #8e5bd1}
+@keyframes arrow{0%{left:-80px;opacity:1}100%{left:60%;opacity:1}}
+</style>
+</head>
+<body>
+<button class="b-hawk"><i></i>HAWKEYE</button>
+
+</body>
+</html>

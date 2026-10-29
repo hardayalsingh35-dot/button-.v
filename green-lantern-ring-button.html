@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Green Lantern Ring — Hero Buttons</title>
+<!-- From Hero Buttons · MIT License · free to use -->
+<style>
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #06140a; font-family: "Segoe UI", Arial, sans-serif; }
+  .stage.lit { background: radial-gradient(circle, #4a4030, #1c1a16); }
+.b-gl{position:relative;width:104px;height:104px;border-radius:50%;border:10px solid #2eff6a;background:#062a12;cursor:pointer;box-shadow:0 0 20px #2eff6a88,inset 0 0 20px #2eff6a55;transition:.3s}
+.b-gl::before{content:"";position:absolute;left:50%;top:50%;width:34px;height:34px;transform:translate(-50%,-50%);border-radius:50%;border:5px solid #2eff6a;box-shadow:0 0 10px #2eff6a}
+.b-gl::after{content:"";position:absolute;left:50%;top:50%;width:60px;height:34px;transform:translate(-50%,-50%);border-top:5px solid #2eff6a;border-bottom:5px solid #2eff6a;box-sizing:border-box}
+.b-gl:hover{box-shadow:0 0 50px #2eff6a,inset 0 0 30px #2eff6a;animation:gl-pulse .8s infinite alternate}
+@keyframes gl-pulse{to{transform:scale(1.06)}}
+</style>
+</head>
+<body>
+<button class="b-gl" aria-label="Green Lantern"></button>
+
+</body>
+</html>

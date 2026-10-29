@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iron Man Arc Reactor — Hero Buttons</title>
+<!-- From Hero Buttons · MIT License · free to use -->
+<style>
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #0a0d14; font-family: "Segoe UI", Arial, sans-serif; }
+  .stage.lit { background: radial-gradient(circle, #4a4030, #1c1a16); }
+.b-arc{position:relative;width:110px;height:110px;border-radius:50%;border:0;cursor:pointer;background:radial-gradient(circle,#2b3340,#141a24 60%,#0b0f16);box-shadow:0 0 0 4px #1d2531,0 0 0 6px #3a4656,0 0 25px #00c8ff66;transition:.3s}
+.b-arc::before{content:"";position:absolute;inset:12px;border-radius:50%;background:repeating-conic-gradient(#4ff3ff 0 25deg,transparent 25deg 36deg);-webkit-mask:radial-gradient(circle,transparent 60%,#000 61%);mask:radial-gradient(circle,transparent 60%,#000 61%);animation:arc-spin 6s linear infinite}
+.b-arc::after{content:"";position:absolute;inset:34px;border-radius:50%;background:radial-gradient(circle,#fff,#9ff8ff 30%,#19c6ff 70%);box-shadow:0 0 12px #4ff3ff,0 0 30px #19c6ff;animation:arc-pulse 2s infinite}
+.b-arc:hover{box-shadow:0 0 0 4px #1d2531,0 0 0 6px #3a4656,0 0 50px #00dcffdd}
+.b-arc:hover::before{animation-duration:1s}.b-arc:active{transform:scale(.94)}
+@keyframes arc-spin{to{transform:rotate(360deg)}}@keyframes arc-pulse{50%{transform:scale(1.1);opacity:.8}}
+</style>
+</head>
+<body>
+<button class="b-arc" aria-label="Arc reactor"></button>
+
+</body>
+</html>

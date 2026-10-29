@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hamburger Menu Morph — Hero Buttons</title>
+<!-- From Hero Buttons · MIT License · free to use -->
+<style>
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #1a1d26; font-family: "Segoe UI", Arial, sans-serif; }
+  .stage.lit { background: radial-gradient(circle, #4a4030, #1c1a16); }
+.b-burger{width:56px;height:56px;border:0;border-radius:12px;background:#fff;cursor:pointer;position:relative;box-shadow:0 8px 20px #0006}
+.b-burger i{position:absolute;left:14px;width:28px;height:3px;background:#111;border-radius:2px;transition:.3s}
+.b-burger i:nth-child(1){top:18px}.b-burger i:nth-child(2){top:27px}.b-burger i:nth-child(3){top:36px}
+.b-burger.x i:nth-child(1){top:27px;transform:rotate(45deg)}.b-burger.x i:nth-child(2){opacity:0;transform:translateX(10px)}.b-burger.x i:nth-child(3){top:27px;transform:rotate(-45deg)}
+</style>
+</head>
+<body>
+<button class="b-burger" aria-label="Menu" onclick="this.classList.toggle('x')"><i></i><i></i><i></i></button>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glitch Text — Hero Buttons</title>
+<!-- From Hero Buttons · MIT License · free to use -->
+<style>
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #0a0a0a; font-family: "Segoe UI", Arial, sans-serif; }
+  .stage.lit { background: radial-gradient(circle, #4a4030, #1c1a16); }
+.b-glitch{position:relative;padding:14px 40px;background:#111;color:#fff;font:900 18px Impact,"Arial Black",sans-serif;letter-spacing:3px;cursor:pointer;border:2px solid #fff}
+.b-glitch::before,.b-glitch::after{content:attr(data-text);position:absolute;inset:0;display:grid;place-items:center;background:#111;opacity:0}
+.b-glitch:hover::before{opacity:1;color:#0ff;animation:gl1 .4s infinite;clip-path:inset(0 0 55% 0)}
+.b-glitch:hover::after{opacity:1;color:#f0f;animation:gl2 .4s infinite;clip-path:inset(55% 0 0 0)}
+@keyframes gl1{0%{transform:translate(-3px,0)}50%{transform:translate(3px,-1px)}100%{transform:translate(-2px,1px)}}
+@keyframes gl2{0%{transform:translate(3px,0)}50%{transform:translate(-3px,1px)}100%{transform:translate(2px,-1px)}}
+</style>
+</head>
+<body>
+<button class="b-glitch" data-text="GLITCH">GLITCH</button>
+
+</body>
+</html>

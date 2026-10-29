@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Doga — Hero Buttons</title>
+<!-- From Hero Buttons · MIT License · free to use -->
+<style>
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #15100a; font-family: "Segoe UI", Arial, sans-serif; }
+  .stage.lit { background: radial-gradient(circle, #4a4030, #1c1a16); }
+.b-doga{position:relative;padding:16px 44px 16px 64px;border:0;border-radius:12px;color:#f3e2c7;font:900 18px/1 Impact,"Arial Black",sans-serif;letter-spacing:4px;cursor:pointer;background:linear-gradient(#5a3a1e,#2b1a0b);box-shadow:0 10px 30px #000,inset 0 0 0 1px #8a5a2e;transition:.2s}
+.b-doga i{position:absolute;left:14px;top:50%;width:36px;height:30px;transform:translateY(-50%);background:radial-gradient(circle at 30% 50%,#ff2a2a 3px,transparent 4px),radial-gradient(circle at 70% 50%,#ff2a2a 3px,transparent 4px),#3a2210;border-radius:40% 40% 50% 50%;transition:.3s}
+.b-doga i::before,.b-doga i::after{content:"";position:absolute;top:-10px;border-left:8px solid transparent;border-right:8px solid transparent;border-bottom:14px solid #3a2210}
+.b-doga i::before{left:1px}.b-doga i::after{right:1px}
+.b-doga:hover{animation:growl .1s infinite;box-shadow:0 10px 30px #000,0 0 20px #ff2a2a55,inset 0 0 0 1px #c47a2e}
+.b-doga:hover i{filter:drop-shadow(0 0 8px #ff2a2a)}
+@keyframes growl{50%{transform:translateX(1.5px)}}
+</style>
+</head>
+<body>
+<button class="b-doga"><i></i>DOGA</button>
+
+</body>
+</html>

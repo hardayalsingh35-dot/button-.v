@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thanos Gauntlet Snap — Hero Buttons</title>
+<!-- From Hero Buttons · MIT License · free to use -->
+<style>
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #1c1326; font-family: "Segoe UI", Arial, sans-serif; }
+  .stage.lit { background: radial-gradient(circle, #4a4030, #1c1a16); }
+.b-thanos{position:relative;padding:16px 44px;border:0;border-radius:12px;color:#2a1a05;font:900 18px/1 Impact,"Arial Black",sans-serif;letter-spacing:3px;cursor:pointer;background:linear-gradient(#f3c75b,#b8862a);box-shadow:0 6px 0 #6b4a10,0 12px 24px #0008;transition:.15s}
+.b-thanos i{position:absolute;top:-8px;width:12px;height:12px;border-radius:50%;background:var(--g);box-shadow:0 0 0 2px #6b4a10;opacity:.6;transition:.3s}
+.b-thanos:hover i{opacity:1;animation:gem 1s infinite}
+.b-thanos i:nth-child(2){animation-delay:.15s}.b-thanos i:nth-child(3){animation-delay:.3s}.b-thanos i:nth-child(4){animation-delay:.45s}.b-thanos i:nth-child(5){animation-delay:.6s}.b-thanos i:nth-child(6){animation-delay:.75s}
+.b-thanos:active{animation:snap .8s forwards}
+@keyframes gem{50%{box-shadow:0 0 0 2px #6b4a10,0 0 14px var(--g),0 0 24px var(--g)}}
+@keyframes snap{to{opacity:0;filter:blur(6px);transform:translateX(30px) scale(1.1)}}
+</style>
+</head>
+<body>
+<button class="b-thanos"><i style="--g:#a855f7;left:8%"></i><i style="--g:#3b82f6;left:24%"></i><i style="--g:#ef4444;left:40%"></i><i style="--g:#f97316;left:56%"></i><i style="--g:#22c55e;left:72%"></i><i style="--g:#eab308;left:88%"></i>SNAP</button>
+
+</body>
+</html>

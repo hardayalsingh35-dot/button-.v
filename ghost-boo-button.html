@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ghost Boo — Hero Buttons</title>
+<!-- From Hero Buttons · MIT License · free to use -->
+<style>
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #0e0e1a; font-family: "Segoe UI", Arial, sans-serif; }
+  .stage.lit { background: radial-gradient(circle, #4a4030, #1c1a16); }
+.b-ghost{position:relative;padding:18px 44px 16px;border:0;border-radius:40px 40px 10px 10px;background:#f4f4ff;color:#333;font:900 18px/1 Impact,"Arial Black",sans-serif;letter-spacing:3px;cursor:pointer;box-shadow:0 10px 30px #0006;animation:float 2s ease-in-out infinite;transition:.5s}
+.b-ghost::before,.b-ghost::after{content:"";position:absolute;top:12px;width:8px;height:12px;border-radius:50%;background:#222}
+.b-ghost::before{left:18px}.b-ghost::after{right:18px}
+.b-ghost:hover{opacity:.35;transform:translateY(-12px);box-shadow:none}
+@keyframes float{50%{transform:translateY(-8px)}}
+</style>
+</head>
+<body>
+<button class="b-ghost">BOO</button>
+
+</body>
+</html>

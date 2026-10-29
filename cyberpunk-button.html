@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cyberpunk — Hero Buttons</title>
+<!-- From Hero Buttons · MIT License · free to use -->
+<style>
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #0a0a12; font-family: "Segoe UI", Arial, sans-serif; }
+  .stage.lit { background: radial-gradient(circle, #4a4030, #1c1a16); }
+.b-cyber{position:relative;padding:14px 44px;border:0;background:#fcee0a;color:#111;font:900 18px Impact,"Arial Black",sans-serif;letter-spacing:3px;cursor:pointer;clip-path:polygon(0 0,100% 0,100% 70%,92% 100%,0 100%,0 30%);transition:.1s}
+.b-cyber::after{content:"";position:absolute;left:0;right:0;top:45%;height:4px;background:#111;opacity:0}
+.b-cyber:hover{background:#00f0ff;color:#111}
+.b-cyber:hover::after{opacity:1;animation:cy-glitch .3s steps(2) infinite}
+@keyframes cy-glitch{50%{top:60%;height:2px}}
+</style>
+</head>
+<body>
+<button class="b-cyber">CYBER_PUNK</button>
+
+</body>
+</html>
